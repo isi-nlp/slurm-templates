@@ -1,7 +1,8 @@
 # USC HPC Slurm Templates
 
 Since we constantly interact with HPC for training and testing models, this repo serves as a collection for best
-practises to submit python jobs to HPC using slurm.
+practises to submit python jobs to HPC using slurm. If you see anything here that is not a best practise/was a 
+best practise but has now been changed, please let me know or create a pull request to update it.
 
 ## Setup your Python Environment
 
