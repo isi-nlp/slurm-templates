@@ -26,5 +26,7 @@ echo ""
 ### Add your python code here
 python3 "$SOURCE_DIR"/YOUR_PYTHON_SCRIPT.py
 
-### Finishing up the job
+### Finishing up the job and copy the output off of staging
+mkdir "$SOURCE_DIR"/output
+cp OUTPUT_FILES_OR_FOLDER "$SOURCE_DIR"/output
 echo "Job finished with exit code $? at: $(date)"
