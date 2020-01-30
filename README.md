@@ -10,8 +10,10 @@ https://hpcc.usc.edu/support/documentation/python/
 
 ## Slurm Templates
 
-In this repo you can find the slurm templates for a single job submission, and an array job submission. The DMTCP job 
-submission checkpoint script is still in the work.
+In this repo you can find the the following slurm templates
+* Template for a single job submission
+* Template for an array job submission (good for threading/running multiple job at the same time)
+* (In progress) The DMTCP-checking pointing enabled job submission. In the case of unexpected outage the job will resubmit till complete.
 
 ## Contact
 
