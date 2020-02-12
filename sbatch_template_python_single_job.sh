@@ -2,10 +2,10 @@
 #SBATCH --ntasks=1                      # Number of instances launched of this job.
 #SBATCH --time=00:10:00                 # The time allocated for this job. Default is 30 minsutes. Acceptable format: MM, MM:SS, HH:MM:SS, DD-HH", DD-HH:MM, DD-HH:MM:SS.
 #SBATCH --partition=isi                 # The partition of HPC of this job. Remove this line if you don't want to specify a partition
-#SBATCH --cpus-per-task=1               # Number of CPU needed. Unless your code is designed to utilize multiple threads this number should stay 1.
+#SBATCH --mem=1G                        # Total memory allocated (single core)
 #SBATCH --mem-per-cpu=1G                # Memory allocated per cpu core. Default is 1GB.
+#SBATCH --cpus-per-task=1               # Number of CPU needed. Unless your code is designed to utilize multiple threads this number should stay 1.
 #SBATCH --gres=gpu:k20:1                # Number of GPU cores needed. Format is gpu:<GPU_type>:<number>.
-#SBATCH --mem-per-gpu=1G                # Memory allocated per GPU core.
 #SBATCH --job-name=JOB_NAME             # The name of this job. If removed the job will have name of your shell script.
 #SBATCH --output=%x-%j.out              # The name of the file output. %x-%j means JOB_NAME-JOB_ID. If removed output will be in file slurm-JOB_ID.
 #SBATCH --mail-user=EMAIL_ADDRESS       # Email address for email notifications to be sent to.
